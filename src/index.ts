@@ -51,6 +51,7 @@ interface Todo {
   todoApp.addTodo('Buy groceries');
   todoApp.addTodo('Finish homework');
   todoApp.addTodo('Go for a run');
+  todoApp.addTodo('Rest');
   
   // Complete a todo and delete another
   todoApp.completeTodoById(2);
