@@ -1,8 +1,6 @@
 # Setting up code owners
 
-
 # The dish
-
 To automatically assign reviewers to pull requests based on the files that were changed, you can use the CODEOWNERS file in your Git repository. The CODEOWNERS file allows you to specify code owners for different parts of your project, and these owners will be automatically assigned as reviewers when pull requests affect the files they own. Here's how you can use the CODEOWNERS file:
 
 # Recipe
@@ -24,13 +22,19 @@ You can use various patterns to match files or directories, such as wildcards (*
 ### 3. Commit and push the CODEOWNERS file: 
 Save the changes to the CODEOWNERS file and commit it to your repository. Push the changes to make the file available on the remote repository.
 
-### 4: Configure branch protection rules (optional): 
+### 4. Configure branch protection rules (optional): 
 To enforce code review based on the CODEOWNERS file, you can set up branch protection rules in your repository. Branch protection rules allow you to define required reviews and other restrictions for certain branches. You can specify that a pull request must receive approval from a code owner before it can be merged. This step is optional but recommended for enforcing code review based on CODEOWNERS. 
 
 To set up branch protection rules, go to your repository's settings, navigate to the "Branches" or "Branch protection rules" section, and configure the appropriate settings.
 ![image](./resources//setting-up-code-owners-02.png)
 
-# Use case
+### 5. Pull requests:
+With the CODEOWNERS file and optionally configured branch protection rules, pull requests that modify files owned by specific individuals or teams will automatically assign those owners as reviewers. This helps ensure that the relevant parties are notified and involved in the code review process for the affected files.
+
 ![image](./resources//setting-up-code-owners-01.png)
 
-With the CODEOWNERS file and optionally configured branch protection rules, pull requests that modify files owned by specific individuals or teams will automatically assign those owners as reviewers. This helps ensure that the relevant parties are notified and involved in the code review process for the affected files.
+# Use case
+- Clearly defined code ownership
+- Automated reviewer assignment
+- Streamlined code review process
+- Enforced review requirements (optional)
